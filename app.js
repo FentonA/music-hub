@@ -16,7 +16,7 @@ var commentRoutes		= require("./routes/comments"),
 	indexRoutes			= require("./routes/index");
 
 
-mongoose.connect("mongodb://musicHub_Omega:Alf@1289@ds111993.mlab.com:11993/music_hub");
+mongoose.connect("mongodb://adminA:coltdidthis7@ds111993.mlab.com:11993/music_hub");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
