@@ -51,5 +51,5 @@ app.use("/lyrics", lyricRoutes);
 app.use("/lyrics/:id/comments", commentRoutes);
 
 //server 
-app.listen(3000);
+app.listen((process.env.PORT || 5000);
 console.log("server is listening");
