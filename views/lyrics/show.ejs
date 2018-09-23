@@ -1,0 +1,61 @@
+<% include ../partials/header%>
+
+<script type="text/javascript">
+
+function translateBn(currentLyric){
+	document.getElementById("text").innerHTML = currentLyric;
+
+}
+</script>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-3">
+			<p class="lead">musicHUB</p>
+			<div class="list-group">
+				<button class ="list-group-item" onclick = 'translateBn("<%=lyric.lyric%>")'>Original</button>
+				<button class ="list-group-item" onclick = 'translateBn("<%=lyric.translation%>")'>Translate</button>
+			</div>
+		</div>
+		<div class="col-md-9">
+			<div class="thumbnail text-center">
+				
+				<img class="img-responsive" src ="<%= lyric.image%>">
+				<div id ="caption" class ="caption">
+ 						<h4 id = "text"><%=lyric.translation%></h4>
+				</div>
+				<div class="caption-full">
+					
+					<h4 class ="pull-right"></h4>
+					<h4><a><%=lyric.name%></a></h4>
+					
+					
+					<% if(currentUser && lyric.author.id.equals(currentUser._id)){%>
+					<a class ="btn btn-warning" href="/lyrics/<%= lyric._id%>/edit">Edit</a>
+					<form id ="delete-form" action="/lyrics/<%=lyric._id%>?_method=DELETE" method= "POST">
+						<button class= "btn btn-danger">Delete</button>
+					</form>
+					<%}%>
+				<div class ="well">
+					<div class ="text-right">
+						<a class ="btn btn-success" href= "/lyrics<%= lyric._id%>/comments/new"> Add a new comment</a>
+					</div>
+					<hr>
+						<%lyric.comments.forEach(function(comment){%>
+						<div class ="row">
+							<div class="col-md-12">
+								<strong><%= comment.author.username%></strong>
+							</div>
+							<span class ="pull-right">10 days ago</span>
+							<p>
+								<%= comment.text%>
+							</p>
+						</div>
+					</div>
+					<%})%>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<%include ../partials/footers%>

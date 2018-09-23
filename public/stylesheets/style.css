@@ -1,0 +1,42 @@
+body {
+  background: #fceabb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+img{
+  display:  block;
+}
+.thumbnail img{
+  width:100%;
+}
+.thumbnail{
+  padding:0;
+}
+.thumbnail .caption-full{
+  padding:9px;
+}
+#delete-form{
+  display:inline;
+}
+#caption{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  transform: translate( -50%, -50% );
+}
+#text{
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 1.5;
+  word-spacing: 1.1;
+  /*width: 0.5;*/
+  /*text-align: center;*/
+ /* font-size: 25px;
+  position: absolute;
+*/
+}

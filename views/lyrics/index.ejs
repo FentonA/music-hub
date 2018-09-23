@@ -1,0 +1,39 @@
+<%include ../partials/header%>
+
+	<div class="container">
+	
+		<header class ="jumbotron">
+			<div class="cointainer">
+			<h1>Welcome to MusicHUb</h1>
+			<% if(currentUser && currentUser.isAdmin){%>
+			<p>
+				<a class ="btn btn-primary btn-lg "href="/lyrics/new">Add New Lyric request
+				</a>
+			</p>
+			<%}%>
+		</div>
+	</header>
+
+	<div class="row text-center" style ="display:flex; flex-wrap:wrap;">
+		<%lyrics.forEach(function(lyric){%>
+		<div class="col-md-3 col-sm-6">
+			<div class="thumbnail">
+				<img src ="<%=lyric.image%>">
+				<div class="caption">
+					<h4><%=lyric.name%></h4>
+				</div>
+				<p>
+					<a href="/lyrics/<%= lyric._id%>" class ="btn btn-primary">More Info</a>
+				</p>
+			</div>
+
+		</div>
+
+
+		<%});%>
+
+	</div>
+</div>
+
+
+<%include ../partials/footers%>
