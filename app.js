@@ -51,5 +51,6 @@ app.use("/lyrics", lyricRoutes);
 app.use("/lyrics/:id/comments", commentRoutes);
 
 //server 
-app.listen((process.env.PORT || 5000);
-console.log("server is listening");
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log("Yelpcamp Server is listening");
+});
