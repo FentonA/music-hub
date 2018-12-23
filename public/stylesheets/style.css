@@ -20,6 +20,7 @@ img{
 #delete-form{
   display:inline;
 }
+
 #caption{
   position: absolute;
   top:50%;
@@ -27,6 +28,19 @@ img{
   text-align: center;
   color: grey;
   font-weight: bold;
+  width: 600px;
+  transform: translate( -50%, -50% );
+}
+#caption-scroll{
+   position: absolute;
+  top:50%;
+  left: 50%;
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  overflow-y: scroll;
+  height: 700px;
+  width: 600px;
   transform: translate( -50%, -50% );
 }
 #text{

@@ -1,18 +1,34 @@
 
 <%include ./partials/header%>
 
-<h1>Sign Up!</h1>
 
-<form action = "/register" method="POST">
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align: center;">Sign Up!</h1>
+		<div style="width: 30%; margin:25px auto;">
+			<form action = "/register" method="POST">
 	<div class ="form-group">
-		<input type="text" name="username" placeholder="username">
+		<input class ="form-control"type="text" name="username" placeholder="username">
 	</div>
 	<div class="form-group">
-	<input type="password" name="password" placeholder="password">
+	<input class="form-control"type="password" name="password" placeholder="password">
 	</div>
-	<div class="from-group">
-		<input class ="from-control" type="text" name="adminCode" placeholder="Admin Code">
-	<button>Sign Up</button>
+	<div class="form-group">
+		<input class ="form-control" type="" name="adminCode" placeholder="Admin Code">
+	
+	</div>
+
+	<div class="form-group"> 
+	 <input class="form-control" type="submit" value="Sign Up!" style="background-color: black; color: white;">
+		
+	</div>
+		
 </form>
+	</div>
+	
+</div>
+
+
 
 <%include ./partials/footers%>
