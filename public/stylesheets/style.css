@@ -23,7 +23,7 @@ img{
 
 #caption{
   position: absolute;
-  top:50%;
+  top:35%;
   left: 50%;
   text-align: center;
   color: grey;
@@ -41,6 +41,7 @@ img{
   overflow-y: scroll;
   height: 700px;
   width: 600px;
+  color: red;
   transform: translate( -50%, -50% );
 }
 #text{
@@ -53,4 +54,8 @@ img{
  /* font-size: 25px;
   position: absolute;
 */
+/*Scrollbar styles*/
+::-webkit-scrollbar{
+  height: 20px;
+  
 }
