@@ -1,2 +1,14 @@
 # music-hub
 Music hub is a web application targeted at Japanase music fans to and also functions as a tool to help them better understand the meanign and certain nuances behind the lyrics in western music.
+
+
+## Usage
+To use Music_hub, please create an account and log in. After doing so, please submit lyrics of your choice and we'll 
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
