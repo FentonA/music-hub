@@ -8,5 +8,8 @@ To use Music_hub, please had on over to this link(https://cryptic-brushlands-763
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## Authors
+Alf Fenton
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
