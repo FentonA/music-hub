@@ -1,5 +1,5 @@
 # music-hub
-Music hub is a web application targeted at Japanase music fans to and also functions as a tool to help them better understand the meanign and certain nuances behind the lyrics in western music.
+Music hub is a web application targeted at Japanese music fans to and also functions as a tool to help them better understand the meaning and certain nuances behind the lyrics in western music.
 ![image](https://github.com/FentonA/music-hub/blob/master/Screenshot_041420_092940_PM.jpg)
 
 ### Main page: 
